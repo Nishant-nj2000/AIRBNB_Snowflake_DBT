@@ -1,0 +1,5 @@
+uv add dbt-core
+uv add dbt-snowflake
+git branch -m main
+git add .
+git commit -m "initial commit"

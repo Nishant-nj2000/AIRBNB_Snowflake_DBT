@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(command -v pyenv)",
+      "Bash(curl -fsSL https://pyenv.run)",
+      "Bash(bash)",
+      "Bash(command -v gcc cc clang g++)",
+      "Read(//usr/bin/**)",
+      "Bash(curl -LsSf https://astral.sh/uv/install.sh)",
+      "Bash(sh)",
+      "Bash(~/.local/bin/uv python *)",
+      "Bash(~/.local/bin/uv run *)",
+      "Bash(python3.12 --version)",
+      "Bash(python3.12 -c \"import sys; print\\(sys.version\\)\")",
+      "Bash(pip3.12 --version)",
+      "Bash(python3 -m venv .venv)",
+      "Bash(.venv/bin/pip install *)",
+      "Bash(pip --version)",
+      "Bash(python3 -m venv /home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv)",
+      "Bash(/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/bin/pip install *)",
+      "Bash(/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/bin/uv *)"
+    ]
+  }
+}
