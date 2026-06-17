@@ -3,3 +3,52 @@ uv add dbt-snowflake
 git branch -m main
 git add .
 git commit -m "initial commit"
+git switch -c feature_nishant
+dbt init
+(enter project name)
+(enter database to use)
+(enter account identifier - snowflake)
+(enter the username - snowflake)
+(enter the password for snowflake)
+(enter the role - snowflake)
+(enter the warehouse - snowflake)
+(enter the database - snowflake)
+(enter the schema - dbt_schema)
+
+dbt uses snowflake connector and connects using the profiles.yml and dbt_project.yml files and it automatically creates the layers of the schema when loading the data
+
+data movement is needed from staging to bronze layer so for that we use DBT
+
+with the use of 'MODELS' in the DBT we dont need to write any DDL statements we just need to pass the 'SELECT' statements
+
+cd aws-dbt_snowflake_project
+dbt run --select models/demo  (no semicolons should be there in the model sql files)
+
+
+
+the materialization defined at models level will get the priority as compared to dbt__project.yaml
+
+
+sources.yaml is needed for lineage purposes
+
+
+once the sources are prepared then do 'dbt compile'
+
+dbt run
+
+if we want to create schema with name 'bronze' then we need to add that in the dbt_project.yml file as +schema: bronze
+
+so all the things present inside bronze folder in models will be created inside bronze schema
+
+Jinja is being used widely with DBT as a backbone to pass variable dynamically.
+
+
+what if more data is added to the source basically an incremental load of data.
+
+We'd need one bigtable (OTB) to load data in gold layer once the data is landed in bronze and silver layer
+
+we'd build joins using metadata driven pipeline
+
+once the data is landed into gold layer using metadata driven pipeline or query then we need to prepare facts and dimensions for star schema
+
+and for preparation of the dimensions we'd use ephemeralm models

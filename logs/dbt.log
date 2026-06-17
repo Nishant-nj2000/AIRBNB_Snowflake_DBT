@@ -1,0 +1,95 @@
+[0m18:17:12.969403 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cec73163100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cec73e50520>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cec73e51390>]}
+
+
+============================== 18:17:12.992818 | 7721b46f-0ab6-495d-99bb-5fa900d1a123 ==============================
+[0m18:17:12.992818 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:17:12.993556 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'quiet': 'False', 'indirect_selection': 'eager', 'log_path': 'logs', 'debug': 'False', 'no_print': 'None', 'printer_width': '80', 'warn_error': 'None', 'write_json': 'True', 'use_colors': 'True', 'version_check': 'True', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'log_format': 'default', 'empty': 'None', 'fail_fast': 'False', 'invocation_command': 'dbt init', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'profiles_dir': '/home/nishant/.dbt', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True'}
+[0m18:17:13.045494 [info ] [MainThread]: Creating dbt configuration folder at /home/nishant/.dbt
+[0m18:18:38.662037 [error] [MainThread]: Encountered an error:
+
+[0m18:18:38.664471 [error] [MainThread]: Traceback (most recent call last):
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/dbt/cli/requires.py", line 182, in wrapper
+    result, success = func(*args, **kwargs)
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/dbt/cli/requires.py", line 128, in wrapper
+    return func(*args, **kwargs)
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/dbt/cli/main.py", line 488, in init
+    results = task.run()
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/dbt/task/init.py", line 324, in run
+    project_name = self.get_valid_project_name()
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/dbt/task/init.py", line 278, in get_valid_project_name
+    name = click.prompt("Enter a name for your project (letters, digits, underscore)")
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/click/termui.py", line 218, in prompt
+    value = prompt_func(prompt)
+  File "/home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/click/termui.py", line 201, in prompt_func
+    raise Abort() from None
+click.exceptions.Abort
+
+[0m18:18:38.669314 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": false, "command_wall_clock_time": 85.75116, "process_in_blocks": "6760", "process_kernel_time": 0.117849, "process_mem_max_rss": "112184", "process_out_blocks": "25904", "process_user_time": 1.957494}
+[0m18:18:38.669884 [debug] [MainThread]: Command `dbt init` failed at 18:18:38.669777 after 85.75 seconds
+[0m18:18:38.670273 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cec73163100>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cec71aec2b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7cec71aec820>]}
+[0m18:18:38.670680 [debug] [MainThread]: Flushing usage events
+[0m18:18:47.136373 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7057192275e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x705717e14220>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x705717e141c0>]}
+
+
+============================== 18:18:47.140152 | 56b8201a-c498-49ab-9614-43a83b9476b9 ==============================
+[0m18:18:47.140152 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:18:47.141041 [debug] [MainThread]: running dbt with arguments {'indirect_selection': 'eager', 'target_path': 'None', 'write_json': 'True', 'no_print': 'None', 'cache_selected_only': 'False', 'warn_error': 'None', 'log_path': 'logs', 'use_experimental_parser': 'False', 'version_check': 'True', 'printer_width': '80', 'invocation_command': 'dbt init', 'quiet': 'False', 'debug': 'False', 'send_anonymous_usage_stats': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'profiles_dir': '/home/nishant/.dbt', 'log_cache_events': 'False', 'use_colors': 'True', 'introspect': 'True', 'static_parser': 'True', 'fail_fast': 'False', 'empty': 'None', 'partial_parse': 'True', 'log_format': 'default'}
+[0m18:19:09.527267 [debug] [MainThread]: Starter project path: /home/nishant/Downloads/AIRBNB_Snowflake_DBT/.venv/lib/python3.10/site-packages/dbt/include/starter_project
+[0m18:19:09.529571 [info ] [MainThread]: 
+Your new dbt project "aws_dbt_snowflake_project" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m18:19:09.530303 [info ] [MainThread]: Setting up your profile.
+[0m18:19:38.981091 [debug] [MainThread]: Snowflake adapter: Setting snowflake.connector to ERROR (file logging only)
+[0m18:19:38.981575 [debug] [MainThread]: Snowflake adapter: Setting botocore to ERROR (file logging only)
+[0m18:19:38.981900 [debug] [MainThread]: Snowflake adapter: Setting boto3 to ERROR (file logging only)
+[0m18:25:48.482952 [info ] [MainThread]: Profile aws_dbt_snowflake_project written to /home/nishant/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m18:25:48.483985 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 421.39352, "process_in_blocks": "1192", "process_kernel_time": 0.097819, "process_mem_max_rss": "128656", "process_out_blocks": "10336", "process_user_time": 1.591065}
+[0m18:25:48.484742 [debug] [MainThread]: Command `dbt init` succeeded at 18:25:48.484613 after 421.39 seconds
+[0m18:25:48.485215 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7057192275e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x705716f68280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x705717e14160>]}
+[0m18:25:48.485707 [debug] [MainThread]: Flushing usage events
+[0m18:25:49.900376 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m18:57:11.247245 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77eadbf23610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77eadac42590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77eadac42fb0>]}
+
+
+============================== 18:57:11.249859 | d7463bff-e9e3-4c7a-b3af-168305c3a15a ==============================
+[0m18:57:11.249859 [info ] [MainThread]: Running with dbt=1.11.11
+[0m18:57:11.250307 [debug] [MainThread]: running dbt with arguments {'use_colors': 'True', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'no_print': 'None', 'printer_width': '80', 'static_parser': 'True', 'log_format': 'default', 'indirect_selection': 'eager', 'empty': 'False', 'introspect': 'True', 'target_path': 'None', 'quiet': 'False', 'fail_fast': 'False', 'version_check': 'True', 'log_path': 'logs', 'write_json': 'True', 'profiles_dir': '/home/nishant/.dbt', 'warn_error': 'None', 'invocation_command': 'dbt run --select models/demo', 'use_experimental_parser': 'False', 'log_cache_events': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'cache_selected_only': 'False'}
+[0m18:57:11.250749 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nishant/Downloads/AIRBNB_Snowflake_DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m18:57:11.251396 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 0.052492402, "process_in_blocks": "0", "process_kernel_time": 0.048994, "process_mem_max_rss": "98132", "process_out_blocks": "24", "process_user_time": 1.037879}
+[0m18:57:11.251764 [debug] [MainThread]: Command `dbt run` failed at 18:57:11.251694 after 0.05 seconds
+[0m18:57:11.252045 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77eadbf23610>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77eadac42d10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77eadac42fb0>]}
+[0m18:57:11.252338 [debug] [MainThread]: Flushing usage events
+[0m18:57:12.870833 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m23:42:11.306808 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3c10867760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3c0f592ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3c0f591f90>]}
+
+
+============================== 23:42:11.309177 | 373f8e55-12e0-4c4b-b835-6087344ac651 ==============================
+[0m23:42:11.309177 [info ] [MainThread]: Running with dbt=1.11.11
+[0m23:42:11.309614 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'write_json': 'True', 'profiles_dir': '/home/nishant/.dbt', 'no_print': 'None', 'log_cache_events': 'False', 'target_path': 'None', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'debug': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'invocation_command': 'dbt compile', 'cache_selected_only': 'False', 'introspect': 'True', 'empty': 'False', 'quiet': 'False', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'printer_width': '80', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'log_format': 'default', 'fail_fast': 'False', 'use_colors': 'True'}
+[0m23:42:11.310032 [error] [MainThread]: Encountered an error:
+Runtime Error
+  No dbt_project.yml found at expected path /home/nishant/Downloads/AIRBNB_Snowflake_DBT/dbt_project.yml
+  Verify that each entry within packages.yml (and their transitive dependencies) contains a file named dbt_project.yml
+  
+[0m23:42:11.310648 [debug] [MainThread]: Resource report: {"command_name": "compile", "command_success": false, "command_wall_clock_time": 0.054845333, "process_in_blocks": "24", "process_kernel_time": 0.055011, "process_mem_max_rss": "98188", "process_out_blocks": "8", "process_user_time": 0.925195}
+[0m23:42:11.311045 [debug] [MainThread]: Command `dbt compile` failed at 23:42:11.310961 after 0.06 seconds
+[0m23:42:11.311335 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3c10867760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3c0f448280>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e3c0f592080>]}
+[0m23:42:11.311631 [debug] [MainThread]: Flushing usage events
+[0m23:42:12.953872 [debug] [MainThread]: An error was encountered while trying to flush usage events
