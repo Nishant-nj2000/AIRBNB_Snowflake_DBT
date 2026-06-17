@@ -1,3 +1,4 @@
+dbt is a transformation tool that allows you to write modular SQL queries to transform raw data into analyticfs-ready data models
 uv add dbt-core
 uv add dbt-snowflake
 git branch -m main
