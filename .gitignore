@@ -8,3 +8,5 @@ wheels/
 
 # Virtual environments
 .venv
+
+/home/nishant/Downloads/AIRBNB_Snowflake_DBT/nishant_accessKeys.csv
