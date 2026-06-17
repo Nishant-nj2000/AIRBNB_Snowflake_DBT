@@ -52,3 +52,15 @@ we'd build joins using metadata driven pipeline
 once the data is landed into gold layer using metadata driven pipeline or query then we need to prepare facts and dimensions for star schema
 
 and for preparation of the dimensions we'd use ephemeralm models
+
+finally we'll prepare a fact table with all the numeric fields and all the other fields would be there in their specific dim_ tables.
+
+we can also prepare test cases in the tests folder with severity as warning and errors alsol.
+
+
+git add .
+git commit -m "project completed"
+git branch
+git switch main
+git branch 
+git merge feature_nishant
