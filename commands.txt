@@ -65,3 +65,5 @@ git branch
 git switch main
 git branch 
 git merge feature_nishant
+
+we use snapshots for implementing SCD type 2
