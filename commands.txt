@@ -67,3 +67,8 @@ git branch
 git merge feature_nishant
 
 we use snapshots for implementing SCD type 2
+
+we can use dbt deps command to install dbt packages on the go we can define packaes in the root directory of the dbt project inside packages.yml file
+
+dbt docs generate (to generate the documentation)
+dbt docs serve (it will create a localhost and display all the project information on a webpage)
